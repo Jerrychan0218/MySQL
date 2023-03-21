@@ -1,0 +1,24 @@
+body{
+    background-image:url(wuxia.jpg); /*用這張圖做背景*/
+    background-size:cover; /*要剛好fit網頁的size*/
+}
+
+h2{
+    color:rgb(88, 0, 0);
+    text-align:center;
+    border-bottom:5px solid rgba(121, 150, 247, 0.5); /*rgba的a是alpha值，代表透明度*/
+    width:fit-content;
+    /* cursor:pointer; 變成可以按的樣子 */
+}
+
+p{
+    background-color: aquamarine;
+    color:rgb(0, 70, 58);
+    text-align:left;
+    width:fit-content;
+}
+
+li{
+    list-style: none;
+    display: inline-block; /*會把東西放到同一行*/
+}

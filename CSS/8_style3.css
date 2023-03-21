@@ -1,0 +1,26 @@
+body{
+    background-image:url(wuxia.jpg); /*用這張圖做背景*/
+    background-size:cover; /*要剛好fit網頁的size*/
+}
+
+h2{
+    color:rgb(88, 0, 0);
+    text-align:center;
+    border-bottom:5px solid rgba(121, 150, 247, 0.5); /*rgba的a是alpha值，代表透明度*/
+    width:fit-content;
+    /* cursor:pointer; 變成可以按的樣子 */
+}
+
+li{
+    list-style: none;
+    display: inline-block; /*會把東西放到同一行*/
+}
+
+p{
+    font-size:20px;
+}
+
+/*span{
+    /*font-size:2em; /*是指parent element 也就是所在地的上一個區塊，這邊就是<p>，現在<p> = 50px，5em就是<p>的五倍，所以會跟著所在的空間，來改變設定*/
+    /*font-size:5rem; /*rem是指root element，也就是<html>的區塊*/
+/*}

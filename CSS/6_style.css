@@ -1,0 +1,65 @@
+body{
+    background-image:url(wuxia.jpg); /*用這張圖做背景*/
+    background-size:auto; /*要剛好fit網頁的size*/
+    /* display:flex; 會將所有內容弄成一行顯示*/
+    /* flex-wrap: wrap;  當視窗不夠空間，就會自動調到下一行 */
+    /* justify-content: center; */
+}
+
+h2{
+    color:rgb(88, 0, 0);
+    text-align:center;
+    border-bottom:5px solid rgba(121, 150, 247, 0.5); /*rgba的a是alpha值，代表透明度*/
+    width:800px;
+    transition: all 3s ease-in-out;
+    /* box-shadow:10px 10px 10px #888888; 在四周弄陰影*/ 
+    /* cursor:pointer; 變成可以按的樣子 */
+}
+
+h2:hover{
+    text-align: center;
+    width:1200px;
+}
+
+p{
+    background-color:rgb(255, 132, 132) /*!important*/; /*在最後打important的話，會無視所有後續對p的改動，不建議這樣做，因為當很多coding的時候，會弄得很亂*/
+    text-decoration: underline/*line-through*/;
+    text-transform: uppercase;
+    line-height:30px;
+    font-style: italic;
+    font-weight:bold;
+    font-size:150%;
+    font-family: 'Noto Sans HK', sans-serif;
+    text-align:center;
+    color:beige;
+    width: 700px;
+}
+
+img{
+    float:left;
+    margin:10px;
+    transition: all 1s;
+}
+
+img:hover{
+    transform: scale(1.2,1.2);
+}
+
+li{
+    list-style: none;
+    display: inline-block; /*會把東西放到同一行*/
+    margin-right: 10px;
+    transition: all 1s;
+}
+
+li:hover{
+    background-color: rgb(210, 247, 169);
+    transform:scale(1.2,1.2);
+
+    /* flex-direction: column; 把現在的文字變成列或欄
+    justify-content:row-reverse; 把文字按照flex-direction的方向移動到目標地方，假設flex-direction是垂直，那就垂直移動
+    align-items: end; 把文字按照flex-direction的另一軸移動到目標地方*/
+    /*flex-wrap:wrap; 位置不夠就移到下一行
+    flex-flow:row wrap; 合併了flex-direction + flex-wrap*/ 
+    ;
+}
