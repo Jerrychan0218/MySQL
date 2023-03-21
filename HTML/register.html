@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JC Website</title>
+    </head>
+    <body>
+        <h1>註冊</h1>
+        <a href="index.html">回到首頁</a>
+        <a href="page2.html">第二頁</a>
+    <div>
+        <form method="get"> <!--這會把註冊資訊傳給後端，並在傳送後，啟動action.php這個檔案，但因為這便沒有action.php檔，所以會造成網頁無法顯示，在這邊就先去掉 action="action.php"-->
+            <br/>
+            <span>帳號：</span><input type="text" name="ac"><!--span可以讓我單獨針對帳號來設定style-->
+            <br/>
+            密碼：<input type="password" name='password' min ='5'>
+            <br/>
+            Email: <input type = 'email' name='email' required>
+            <br/>
+            出生日期：<input type="date" name= 'birthday' required>
+            <br/>
+            性別：
+            <br/>
+            <input type="radio" name="gender" value ='Male'>男
+            <br/>
+            <input type="radio" name="gender" value = 'Female'>女
+            <br/>
+            喜歡的主題：
+            <br/>
+            <input type="checkbox" name = 'theme' value="game">遊戲
+            <input type="checkbox" name = 'theme' value="anime">動漫
+            <input type="checkbox" name = 'theme' value="sport">運動
+            <br/>
+            喜歡的動畫：
+            <select name="anime">
+                <option value="titan">進擊的巨人</option>
+                <option value="moon">輝夜姬</option>
+            </select>
+            <br/>
+            <br/>
+            <input type="submit" value="register">
+            <input type="reset">
+        </form>
+    </div>
+    </body>
+</html>
